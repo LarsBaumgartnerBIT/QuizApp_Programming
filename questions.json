@@ -1,0 +1,21 @@
+[
+    {
+        "question": "What is 2 + 2?",
+        "options": [ "3", "4", "5", "22", "Gaga" ],
+        "correct_index": 1
+    },
+    {
+        "question": "Which color is the sky on a sunny day",
+        "options": [ "Green", "Blue", "Red" ],
+        "correct_index": 1
+    },
+    {
+        "options": [ "Zürich", "Bern", "Basel" ],
+        "correct_index": 1
+    },
+    {
+        "question": "Whos the GOAT",
+        "options": [ "Messi", "Ronaldo", "Noel Anton" ],
+        "correct_index": 2
+    }
+]
