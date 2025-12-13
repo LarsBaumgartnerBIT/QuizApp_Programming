@@ -10,6 +10,7 @@
         "correct_index": 1
     },
     {
+        "question": "Whats the capital of Switzerland?",
         "options": [ "Zürich", "Bern", "Basel" ],
         "correct_index": 1
     },

@@ -6,9 +6,13 @@ JSON_FILE = "questions.json"
 def load_questions(filename):
     #try/Catch für Fehlersuche
     try:
-        # Pfad relativ zur aktuellen Datei auflösen
+        # Pfad der aktuellen Datei suchen und filename anfügen
+        #__file__ ist der path zur python datei, automatisch von Python
+        #nimmt nur den ordner, wo die Datei liegt
         base_path = os.path.dirname(os.path.abspath(__file__))
+        #fügt den Json-Dateinamen an
         file_path = os.path.join(base_path, filename)
+        #File öffnen und in data laden
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
