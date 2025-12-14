@@ -31,11 +31,11 @@ def load_questions(filename):
     return questionsFile
 
 #Funktion zur Berechnung der Note, numberCorrect = Anzahl richtig beantwortete Fragen, numberAll = anzahl Fragen
-def calculateGrade(numberCorrect, numberAll):
+def calculateGrade(numberCorrect: int, numberAll: int):
     #Prozentualer Anteil der richtig beantworteten Fragen
     percent = numberCorrect / numberAll
     #grade calculation
-    grade = 1.0 + percent * 5.0
+    grade: float = 1.0 + percent * 5.0
     #round to .5
     return round(grade, 1)
 
@@ -58,9 +58,9 @@ def main():
     #Warte auf Enter Taste
     input("press enter to start! ...")
     #numberCorrect wird auf 0 gesetzt
-    numberCorrect = 0
+    numberCorrect: int = 0
     #Counter for questions
-    counterQuestions = 0
+    counterQuestions: int = 0
     #Loop für jede Frage in der Liste questions
     for question in questions:
         #Fragezähler erhöhen
@@ -70,7 +70,7 @@ def main():
         #Fragenummer und Frage drucken
         print(f"Question {counterQuestions}: {question['question']}")
         #Counter for questions
-        counterOptions = 0
+        counterOptions: int = 0
         #Loop für jede Option in der aktuellen Frage
         for option in question["options"]:
             #Optionenzähler erhöhen
@@ -106,7 +106,7 @@ def main():
             #Ausgabe für falsche Antwort
             print(f"❌ Incorrect! Correct answer: {correctResponse}")
     #Note berechnen über die Funktion calculateGrade
-    grade = calculateGrade(numberCorrect, len(questions))
+    grade: float = calculateGrade(numberCorrect, len(questions))
     #Ausgaben der Ergebnisse
     print("========================================================")
     print(f"Here are your results {name}")
