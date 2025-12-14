@@ -1,30 +1,101 @@
-# 🧠 Console Quiz App  
-**Programming Foundations – Python Project**
+# 🧠 QuizApp – Console Quiz Application
+🎓 Programming Foundations – FHNW, BSc BIT
 
-A simple console-based quiz application written in Python.  
-The project focuses on applying programming concepts learned in the *Programming Foundations* module.
+A console-based quiz application written in Python.  
+---
+## 📝 Analysis
+
+### Problem
+
+In many learning situations, students want a simple way to test their knowledge and receive immediate feedback.  
+Manual quizzes or paper-based tests are time-consuming and do not provide instant grading.
+
+This application solves the problem by providing an automated quiz system that presents questions, validates answers, and calculates a final grade.
 
 ---
 
-## 📌 Project Description
+### Scenario
 
-This quiz app asks the user multiple-choice questions in the console.  
-The questions are loaded from a JSON file, and the user answers by entering the number of the correct option.  
-After completing the quiz, the program calculates and displays a final grade.
+The quiz app is used in a console environment.  
+A user starts the program, answers multiple-choice questions, receives immediate feedback for each answer, and sees a final grade at the end of the quiz.
 
-The project is designed to be simple, clear, and user-friendly, while still covering all required programming fundamentals.
+### User Stories
+
+- As a user, I want to answer quiz questions in the console.
+- As a user, I want to choose my answer using numbers.
+- As a user, I want to know immediately if my answer is correct or wrong.
+- As a user, I want to see the correct answer if I was wrong.
+- As a user, I want to receive a final grade after completing the quiz.
 
 ---
 
-## ⚙️ Features
+### Use Cases
 
-- Multiple-choice quiz questions  
-- Questions loaded from a JSON file  
-- User answers via numeric input  
-- Input validation to prevent crashes  
-- Immediate feedback (correct / wrong)  
-- Correct answer shown if the user is wrong  
-- Final score and grade calculation  
+- Load quiz questions from a JSON file
+- Display questions and answer options
+- Validate user input
+- Check answers and count correct responses
+- Calculate and display a final grade
+
+---
+
+✅ Project Requirements
+Each app must meet the following three criteria in order to be accepted (see also the official project guidelines PDF on Moodle):
+
+Interactive app (console input)
+Data validation (input checking)
+File processing (read/write)
+
+---
+
+### 2. Data Validation
+
+The application validates all user input to prevent errors and crashes:
+
+- User input is checked to ensure it is numeric
+- Input values are validated to be within the available answer range
+- Invalid input results in a warning message and a retry
+
+This ensures a better user experience and meets the validation requirements of the module.
+
+---
+
+### 3. File Processing
+
+The application uses file processing to manage quiz data:
+
+**Input file:**  
+`questions.json` — Contains all quiz questions, answer options, and the correct answer index.
+
+Example:
+
+json
+{
+  "question": "What is Python?",
+  "options": ["A snake", "A programming language", "A database"],
+  "correct_index": 1
+}
+
+---
+
+### 📄 `README.md` – Teil 10 (Team, Highlights, License)
+
+md
+## 👥 Team & Contributions
+
+| Name | Contribution |
+|------|-------------|
+| Noel | Creating the JSON file and loading questions |
+| Josh | Grade calculation and answer checking |
+| Lars | Loops, input validation, and final output |
+
+## ⭐ Highlights
+
+- Platform-independent file handling
+- Clean separation of logic using functions
+- Stable input validation without program crashes
+- Clear and fair grading system
+
 
 ---
 
