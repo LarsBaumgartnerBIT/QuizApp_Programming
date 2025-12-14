@@ -1,22 +1,47 @@
 [
-    {
-        "question": "What is 2 + 2?",
-        "options": [ "3", "4", "5", "22", "Gaga" ],
-        "correct_index": 1
-    },
-    {
-        "question": "Which color is the sky on a sunny day",
-        "options": [ "Green", "Blue", "Red" ],
-        "correct_index": 1
-    },
-    {
-        "question": "Whats the capital of Switzerland?",
-        "options": [ "Zürich", "Bern", "Basel" ],
-        "correct_index": 1
-    },
-    {
-        "question": "Whos the GOAT",
-        "options": [ "Messi", "Ronaldo", "Noel Anton" ],
-        "correct_index": 2
-    }
+  {
+    "question": "What is Python?",
+    "options": ["A type of snake", "A programming language", "An operating system", "A computer game"],
+    "correct_index": 1
+  },
+  {
+    "question": "Which function prints text to the console?",
+    "options": ["echo()", "print()", "write()", "output()"],
+    "correct_index": 1
+  },
+  {
+    "question": "How do you assign the value 5 to a variable in Python?",
+    "options": ["x == 5", "x := 5", "x = 5", "int x = 5"],
+    "correct_index": 2
+  },
+  {
+    "question": "Which data type is used to store text?",
+    "options": ["int", "float", "bool", "str"],
+    "correct_index": 3
+  },
+  {
+    "question": "How do you write a comment in Python?",
+    "options": ["//", "#", "/*", "--"],
+    "correct_index": 1
+  },
+  {
+    "question": "Which function is used to get user input?",
+    "options": ["scan()", "read()", "input()", "get()"],
+    "correct_index": 2
+  },
+  {
+    "question": "What is the result of 3 + 2 * 2?",
+    "options": ["10", "7", "8", "5"],
+    "correct_index": 1
+  },
+  {
+    "question": "Which value represents True in Python?",
+    "options": ["true", "1", "True", "yes"],
+    "correct_index": 2
+  },
+  {
+    "question": "Which loop runs as long as a condition is true?",
+    "options": ["for", "while", "repeat", "loop"],
+    "correct_index": 1
+  }
 ]
