@@ -2,14 +2,13 @@
 🎓 Programming Foundations – FHNW, BSc BIT
 
 A console-based quiz application written in Python.  
-The project demonstrates fundamental programming concepts such as console interaction, data validation, loops, functions, and file processing.
 ---
 ## 📝 Analysis
 
 ### Problem
 
 In many learning situations, students want a simple way to test their knowledge and receive immediate feedback.  
-Manual quizzes or paper-based tests are time-consuming and do not provide instant evaluation or grading.
+Manual quizzes or paper-based tests are time-consuming and do not provide instant grading.
 
 This application solves the problem by providing an automated quiz system that presents questions, validates answers, and calculates a final grade.
 
@@ -18,7 +17,7 @@ This application solves the problem by providing an automated quiz system that p
 ### Scenario
 
 The quiz app is used in a console environment.  
-A user starts the program, answers multiple-choice questions, receives immediate feedback for each answer, and sees a final score and grade at the end of the quiz.
+A user starts the program, answers multiple-choice questions, receives immediate feedback for each answer, and sees a final grade at the end of the quiz.
 
 ### User Stories
 
@@ -40,18 +39,12 @@ A user starts the program, answers multiple-choice questions, receives immediate
 
 ---
 
-## ✅ Project Requirements
+✅ Project Requirements
+Each app must meet the following three criteria in order to be accepted (see also the official project guidelines PDF on Moodle):
 
-Each app must fulfill the following criteria:
-
-### 1. Interactive App (Console Input)
-
-The application interacts with the user through the console. Users can:
-
-- Enter their answers using numeric input
-- Progress through multiple questions
-- Receive feedback after each answer
-- See a final result and grade
+Interactive app (console input)
+Data validation (input checking)
+File processing (read/write)
 
 ---
 
@@ -63,7 +56,7 @@ The application validates all user input to prevent errors and crashes:
 - Input values are validated to be within the available answer range
 - Invalid input results in a warning message and a retry
 
-This ensures a smooth user experience and meets the validation requirements of the module.
+This ensures a better user experience and meets the validation requirements of the module.
 
 ---
 
@@ -82,15 +75,6 @@ json
   "options": ["A snake", "A programming language", "A database"],
   "correct_index": 1
 }
-
----
-
-✅ Project Requirements
-Each app must meet the following three criteria in order to be accepted (see also the official project guidelines PDF on Moodle):
-
-Interactive app (console input)
-Data validation (input checking)
-File processing (read/write)
 
 ---
 
